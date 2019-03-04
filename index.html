@@ -1,12 +1,92 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
-
-  </body>
+<head>
+	<meta charset="utf-8">
+	<title>HTML Academy: Седона</title>
+</head>
+<body>
+	<header class="main-header">
+		<nav class="main-navigation">
+			<a class="header-logo"></a>
+			<ul class="site-menu">
+				<li><a href="#">Информация</a></li>
+				<li><a href="#">Фото и видео</a></li>
+				<li><a href="#">Карта штата</a></li>
+				<li><a href="#">Гостиницы</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section class="promo-block">
+			<p class="promo-title"><b>Седона &mdash; небольшой городок в Аризоне, заслуживающий большего!</b></p>
+			<p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+			<ol class="promo-reasons">
+				<li class="promo-reasons-item">
+					<h3 class="promo-reason-tiile">Настоящий городок</h3>
+					<p class="promo-reason-text">Седона &mdash; не аттракцион для туристов, там течёт своя жизнь</p>
+					<ul class="city-features">
+						<li class="city-features-item">
+							<h4 class="features-title">Жильё</h4>
+							<p class="features-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+						</li>
+						<li class="city-features-item">
+							<h4 class="features-title">Еда</h4>
+							<p class="features-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+						</li>
+						<li class="city-features-item">
+							<h4 class="features-title">Сувениры</h4>
+							<p class="features-text">Не только китайского, но и местного производства!</p>
+						</li>
+					</ul>	
+				</li>
+				<li class="promo-reasons-item">
+					<h3 class="promo-reason-tiile">Там есть Мост Дьявола</h3>
+					<p class="promo-reason-text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+				</li>
+				<li class="promo-reasons-item">
+					<h3 class="promo-reason-tiile">Небольшая площадь</h3>
+					<p class="promo-reason-text">Все достопримечательности находятся очень близко</p>
+				</li>
+				<li class="promo-reasons-item">
+					<h3 class="promo-reason-tiile">Красивая дорога</h3>
+					<p class="promo-reason-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+				</li>
+				<li class="promo-reasons-item">
+					<h3 class="promo-reason-tiile">Мало туристов</h3>
+					<p class="promo-reason-text">Большинство едет в Гранд Каньон и толпится там</p>
+				</li>
+			</ol>
+		</section>
+		<section class="search-hotels">
+			<h2 class="visually-hidden">Поиск гостиниц в Седоне</h2>
+			<p class="search-intro"><b>Заинтересовались?</b></p>
+			<p class="search-intro-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+			<!-- map -->
+			<section class="hotels-search-popup">
+				<a href="#" class="button">Поиск гостиницы в Седоне</a>
+				<form action="https://echo.htmlacademy.ru" method="post">
+					<p><label for="">Дата заезда:<input type="text"></label></p>
+					<p><label for="">Дата выезда:<input type="text"></label></p>
+					<p><label for="">Взрослые:<input type="text"></label></p>
+					<p><label for="">Дети:<input type="text"></label></p>
+					<button class="button" type="submit">Найти</button>
+				</form>
+			</section>
+		</section>
+	</main>
+	<footer class="main-footer">
+		<section class="footer-social">
+			<a href="#" class="social-hashtag">#visitsedona</a>
+			<ul class="social-block">
+				<li><a href="#" class="social-button tw-button"><span class="visually-hidden">Страница Седоны в Твиттере</span></a></li>
+				<li><a href="#" class="social-button fb-button"><span class="visually-hidden">Страница Седоны в Фейсбуке</span></a></li>
+				<li><a href="#" class="social-button utb-button"><span class="visually-hidden">Страница Седоны в Ютубе</span></a></li>
+			</ul>
+		</section>
+		<p class="footer-copyright">
+			<span>website by</span>
+			<a href="#" class="copyright-link"><span class="visually-hidden">Страница htmlacademy</span></a>
+		</p>
+	</footer>
+</body>
 </html>
