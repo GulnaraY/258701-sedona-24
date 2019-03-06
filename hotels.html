@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>HTML Academy: Седона</title>
+</head>
+<body>
+	<header class="main-header">
+		<nav class="main-navigation">
+			<a class="header-logo"></a>
+			<ul class="site-menu">
+				<li><a href="#">Информация</a></li>
+				<li><a href="#">Фото и видео</a></li>
+				<li><a href="#">Карта штата</a></li>
+				<li><a href="#">Гостиницы</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main class="inner-page">
+		<h1 class="visually-hidden">Гостиницы в Седоне</h1>
+		<section class="booking">
+			<section class="filters">
+				<h2 class="visually-hidden">Фильтр:</h2>
+				<form action="https://echo.htmlacademy.ru" method="get">
+					<fieldset>
+						<legend>Инфраструктура:</legend>
+						<ul class="infrastructure-list">
+							<li>
+								<input type="checkbox" name="pool" id="pool-field" checked>
+								<label for="pool-field">Бассейн</label>
+							</li>
+							<li>
+								<input type="checkbox" name="parking" id="parking-field">
+								<label for="parking-field">Парковка</label>
+							</li>
+							<li>
+								<input type="checkbox" name="wifi" id="wifi-field">
+								<label for="wifi-field">wi-fi</label>
+							</li>
+						</ul>
+					</fieldset>
+					<fieldset>
+						<legend>Тип жилья:</legend>
+						<ul>
+							<li>
+								<input type="checkbox" name="hotel" id="hotel-field">
+								<label for="hotel-field">Гостиница</label>
+							</li>
+							<li>
+								<input type="checkbox" name="motel" id="motel-field">
+								<label for="motel-field">Мотель</label>
+							</li>
+							<li>
+								<input type="checkbox" name="apartments" id="apartments-field">
+								<label for="apartments-field">Апартаменты</label>
+							</li>
+						</ul>
+					</fieldset>
+					<fieldset>
+						<legend>Стоимость в сутки (р):</legend>
+						<div class="price-controls"></div>
+						<div class="range-controls"></div>
+					</fieldset>
+					<button type="submit">Показать</button>
+				</form>
+			</section>
+			<section class="searching-results">
+				<p class="results-quantity">Найдено:<span>3</span></p>
+				<section class="sorting">
+					<h2 class="sorting-title">Сортировка:</h2>
+					<ul class="sorting-type">
+						<li><a href="#">По цене</a></li>
+						<li><a href="#"></a>По типу</li>
+						<li><a href="#"></a>По рейтингу</li>
+					</ul>
+					<ul class="sorting-direction">
+						<li><a href="#"><span class="visually-hidden">По возрастанию</span></a></li>
+						<li><a href="#"><span class="visually-hidden">По убыванию</span></a></li>
+					</ul>
+				</section>
+				<section class="hotels">
+					<h2 class="visually-hidden">Список найденных гостиниц</h2>
+					<ul class="hotels-list">
+						<li>
+							<img src="" alt="Amara Resort & Spa">
+							<h3>Amara Resort & Spa</h3>
+							<p class="hotel-details">
+								<b class="hotel-type"></b>
+								<b class="hotel-price"></b>
+							</p>
+							<a class="button" href="#">Подробнее</a>
+							<a class="button" href="#">Забронировать</a>
+							<div class="rating"></div>
+						</li>
+						<li>
+							<img src="" alt="Desert Quail Inn">
+							<h3>Desert Quail Inn</h3>
+							<p class="hotel-details">
+								<b class="hotel-type"></b>
+								<b class="hotel-price"></b>
+							</p>
+							<a class="button" href="#">Подробнее</a>
+							<a class="button" href="#">Забронировать</a>
+							<div class="rating"></div>
+						</li>
+						<li>
+							<img src="" alt="Villas at Poco Diablo">
+							<h3>Villas at Poco Diablo</h3>
+							<p class="hotel-details">
+								<b class="hotel-type"></b>
+								<b class="hotel-price"></b>
+							</p>
+							<a class="button" href="#">Подробнее</a>
+							<a class="button" href="#">Забронировать</a> 
+							<div class="rating"></div>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</section>
+	</main>
+	<footer class="main-footer">
+		<section class="footer-social">
+			<a href="#" class="social-hashtag">#visitsedona</a>
+			<ul class="social-block">
+				<li><a href="#" class="social-button tw-button"><span class="visually-hidden">Страница Седоны в Твиттере</span></a></li>
+				<li><a href="#" class="social-button fb-button"><span class="visually-hidden">Страница Седоны в Фейсбуке</span></a></li>
+				<li><a href="#" class="social-button utb-button"><span class="visually-hidden">Страница Седоны в Ютубе</span></a></li>
+			</ul>
+		</section>
+		<p class="footer-copyright">
+			<span>website by</span>
+			<a href="#" class="copyright-link"><span class="visually-hidden">Страница htmlacademy</span></a>
+		</p>
+	</footer>
+</body>
+</html>
