@@ -3,27 +3,65 @@
 <head>
 	<meta charset="utf-8">
 	<title>HTML Academy: Седона</title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<header class="main-header">
-		<nav class="main-navigation">
-			<a class="header-logo"></a>
+		<nav class="main-navigation container">
+			<a class="header-logo"><img src="img/logo.svg" width="140" height="72" alt="Логотип Седоны"></a>
 			<ul class="site-menu">
 				<li><a href="#">Информация</a></li>
 				<li><a href="#">Фото и видео</a></li>
 				<li><a href="#">Карта штата</a></li>
-				<li><a href="#">Гостиницы</a></li>
+				<li><a href="hotels.html">Гостиницы</a></li>
 			</ul>
 		</nav>
 	</header>
 	<main>
+		<hi class="visually-hidden">Приглашаем посетить Седону</hi>
 		<section class="promo-block">
-			<p class="promo-title"><b>Седона &mdash; небольшой городок в Аризоне, заслуживающий большего!</b></p>
-			<p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+			<p class="promo-image-block">
+				<!-- <img src="img/background-photo.jpg" width="1200" height="450"  alt="Фотография Седоны"> -->
+				<img src="img/promo-image.svg" alt="welcome to Sedona" width="459" height="353">
+			</p>
+			<h2 class="promo-title"><b>Седона &mdash; небольшой городок в Аризоне, заслуживающий большего!</b></h2>
+			<p class="promo-text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
 			<ol class="promo-reasons">
 				<li class="promo-reasons-item">
-					<h3 class="promo-reason-tiile">Настоящий городок</h3>
-					<p class="promo-reason-text">Седона &mdash; не аттракцион для туристов, там течёт своя жизнь</p>
+					<div class="promo-title-text">
+						<h3 class="promo-reason-tiile">Настоящий городок</h3>
+						<p class="promo-reason-text">Седона &mdash; не аттракцион для туристов, там течёт своя жизнь</p>
+					</div>
+					<img class="promo-reason-image" src="img/real-city-image.jpg" width="800" height="256" alt="фото Седоны">
+				</li>
+				<li class="promo-reasons-item">
+					<div class="promo-title-text">
+						<h3 class="promo-reason-tiile">Там есть Мост Дьявола</h3>
+						<p class="promo-reason-text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+					</div>
+					<img class="promo-reason-image" src="img/devils-bridge.jpg" alt="Фото Моста Дьявола">
+				</li>
+				<li class="promo-reasons-item">
+					<div class="promo-title-text">
+						<h3 class="promo-reason-tiile">Небольшая площадь</h3>
+						<p class="promo-reason-text">Все достопримечательности находятся очень близко</p>
+					</div>
+				</li>
+				<li class="promo-reasons-item">
+					<div class="promo-title-text">
+						<h3 class="promo-reason-tiile">Красивая дорога</h3>
+						<p class="promo-reason-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+					</div>
+				</li>
+				<li class="promo-reasons-item">
+					<div class="promo-title-text">
+						<h3 class="promo-reason-tiile">Мало туристов</h3>
+						<p class="promo-reason-text">Большинство едет в Гранд Каньон и толпится там</p>
+					</div>
+				</li>
+				<li class="promo-reasons-item">
 					<ul class="city-features">
 						<li class="city-features-item">
 							<h4 class="features-title">Жильё</h4>
@@ -39,54 +77,95 @@
 						</li>
 					</ul>	
 				</li>
-				<li class="promo-reasons-item">
-					<h3 class="promo-reason-tiile">Там есть Мост Дьявола</h3>
-					<p class="promo-reason-text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-				</li>
-				<li class="promo-reasons-item">
-					<h3 class="promo-reason-tiile">Небольшая площадь</h3>
-					<p class="promo-reason-text">Все достопримечательности находятся очень близко</p>
-				</li>
-				<li class="promo-reasons-item">
-					<h3 class="promo-reason-tiile">Красивая дорога</h3>
-					<p class="promo-reason-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-				</li>
-				<li class="promo-reasons-item">
-					<h3 class="promo-reason-tiile">Мало туристов</h3>
-					<p class="promo-reason-text">Большинство едет в Гранд Каньон и толпится там</p>
-				</li>
 			</ol>
 		</section>
 		<section class="search-hotels">
 			<h2 class="visually-hidden">Поиск гостиниц в Седоне</h2>
 			<p class="search-intro"><b>Заинтересовались?</b></p>
-			<p class="search-intro-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-			<!-- map -->
+			<p class="search-intro-text">Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 			<section class="hotels-search-popup">
 				<a href="#" class="button">Поиск гостиницы в Седоне</a>
-				<form action="https://echo.htmlacademy.ru" method="post">
-					<p><label for="">Дата заезда:<input type="text"></label></p>
-					<p><label for="">Дата выезда:<input type="text"></label></p>
-					<p><label for="">Взрослые:<input type="text"></label></p>
-					<p><label for="">Дети:<input type="text"></label></p>
-					<button class="button" type="submit">Найти</button>
-				</form>
-			</section>
-		</section>
-	</main>
-	<footer class="main-footer">
-		<section class="footer-social">
-			<a href="#" class="social-hashtag">#visitsedona</a>
-			<ul class="social-block">
-				<li><a href="#" class="social-button tw-button"><span class="visually-hidden">Страница Седоны в Твиттере</span></a></li>
-				<li><a href="#" class="social-button fb-button"><span class="visually-hidden">Страница Седоны в Фейсбуке</span></a></li>
-				<li><a href="#" class="social-button utb-button"><span class="visually-hidden">Страница Седоны в Ютубе</span></a></li>
-			</ul>
-		</section>
-		<p class="footer-copyright">
-			<span>website by</span>
-			<a href="#" class="copyright-link"><span class="visually-hidden">Страница htmlacademy</span></a>
+				<form class="booking-form" action="https://echo.htmlacademy.ru" method="post">
+					<p class="date-field">
+						<label for="arrival-field">Дата заезда:
+
+				</label>
+				<input class="date-input" type="text" id="arrival-field" placeholder="24 апреля 2017">
+									<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+						width="21px" height="22px" viewBox="0 0 21 22" enable-background="new 0 0 21 22" xml:space="preserve">
+						<g id="calendar_1_">
+							<path d="M19.251,2.025h-2.845V0.648c0-0.381-0.294-0.689-0.656-0.689c-0.363,0-0.656,0.308-0.656,0.689v1.377h-3.938V0.648
+							c0-0.381-0.294-0.689-0.655-0.689c-0.363,0-0.657,0.308-0.657,0.689v1.377H5.906V0.648c0-0.381-0.294-0.689-0.656-0.689
+							c-0.363,0-0.657,0.308-0.657,0.689v1.377H1.75C0.784,2.025,0,2.847,0,3.862v16.302C0,21.179,0.784,22,1.75,22h17.501
+							C20.217,22,21,21.179,21,20.164V3.862C21,2.847,20.217,2.025,19.251,2.025z M19.688,20.164c0,0.253-0.195,0.459-0.437,0.459H1.75
+							c-0.241,0-0.438-0.206-0.438-0.459V3.862c0-0.253,0.196-0.459,0.438-0.459h2.844v1.378c0,0.381,0.294,0.689,0.657,0.689
+							c0.362,0,0.656-0.308,0.656-0.689V3.403h3.938v1.378c0,0.381,0.294,0.689,0.657,0.689c0.361,0,0.655-0.308,0.655-0.689V3.403h3.938
+							v1.378c0,0.381,0.293,0.689,0.656,0.689c0.362,0,0.656-0.308,0.656-0.689V3.403h2.845c0.241,0,0.437,0.206,0.437,0.459V20.164z"/>
+							<rect x="4.594" y="8.225" width="2.625" height="2.066"/>
+							<rect x="4.594" y="11.668" width="2.625" height="2.067"/>
+							<rect x="4.594" y="15.112" width="2.625" height="2.066"/>
+							<rect x="9.188" y="15.112" width="2.625" height="2.066"/>
+							<rect x="9.188" y="11.668" width="2.625" height="2.067"/>
+							<rect x="9.188" y="8.225" width="2.625" height="2.066"/>
+							<rect x="13.781" y="15.112" width="2.625" height="2.066"/>
+							<rect x="13.781" y="11.668" width="2.625" height="2.067"/>
+							<rect x="13.781" y="8.225" width="2.625" height="2.066"/>
+						</g>
+					</svg>
+			</p>
+			<p class="date-field">
+				<label for="departure-field">Дата выезда:
+			</label>
+			<input class="date-input" type="text" id="departure-field" placeholder="4  июля 2017">
+			<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+					width="21px" height="22px" viewBox="0 0 21 22" enable-background="new 0 0 21 22" xml:space="preserve">
+					<g id="calendar_1_">
+						<path d="M19.251,2.025h-2.845V0.648c0-0.381-0.294-0.689-0.656-0.689c-0.363,0-0.656,0.308-0.656,0.689v1.377h-3.938V0.648
+						c0-0.381-0.294-0.689-0.655-0.689c-0.363,0-0.657,0.308-0.657,0.689v1.377H5.906V0.648c0-0.381-0.294-0.689-0.656-0.689
+						c-0.363,0-0.657,0.308-0.657,0.689v1.377H1.75C0.784,2.025,0,2.847,0,3.862v16.302C0,21.179,0.784,22,1.75,22h17.501
+						C20.217,22,21,21.179,21,20.164V3.862C21,2.847,20.217,2.025,19.251,2.025z M19.688,20.164c0,0.253-0.195,0.459-0.437,0.459H1.75
+						c-0.241,0-0.438-0.206-0.438-0.459V3.862c0-0.253,0.196-0.459,0.438-0.459h2.844v1.378c0,0.381,0.294,0.689,0.657,0.689
+						c0.362,0,0.656-0.308,0.656-0.689V3.403h3.938v1.378c0,0.381,0.294,0.689,0.657,0.689c0.361,0,0.655-0.308,0.655-0.689V3.403h3.938
+						v1.378c0,0.381,0.293,0.689,0.656,0.689c0.362,0,0.656-0.308,0.656-0.689V3.403h2.845c0.241,0,0.437,0.206,0.437,0.459V20.164z"/>
+						<rect x="4.594" y="8.225" width="2.625" height="2.066"/>
+						<rect x="4.594" y="11.668" width="2.625" height="2.067"/>
+						<rect x="4.594" y="15.112" width="2.625" height="2.066"/>
+						<rect x="9.188" y="15.112" width="2.625" height="2.066"/>
+						<rect x="9.188" y="11.668" width="2.625" height="2.067"/>
+						<rect x="9.188" y="8.225" width="2.625" height="2.066"/>
+						<rect x="13.781" y="15.112" width="2.625" height="2.066"/>
+						<rect x="13.781" y="11.668" width="2.625" height="2.067"/>
+						<rect x="13.781" y="8.225" width="2.625" height="2.066"/>
+					</g>
+				</svg>
 		</p>
-	</footer>
+		<p class="quantity-field"><label for="adults-field">Взрослые:</label>
+			<button class="quantity-button quantity-minus"><span class="visually-hidden">уменьшить</span></button>
+			<input class="quantity-input" type="text" id="adults-field" placeholder="2">
+			<button class="quantity-button quantity-plus"><span class="visually-hidden">увеличить</span></button>
+		</p>
+		<p class="quantity-field"><label for="kids-field">Дети:</label>
+			<button class="quantity-button quantity-minus"><span class="visually-hidden">уменьшить</span></button>
+			<input class="quantity-input" type="text" id="kids-field" placeholder="0">
+			<button class="quantity-button quantity-plus"><span class="visually-hidden">увеличить</span></button>
+		</p>
+		<button class="button search-button" type="submit">Найти</button>
+	</form>
+</section>
+<img src="img/map.jpg" alt="Седона на карте" width="1200" height="593">
+</section>
+</main>
+<footer class="main-footer">
+	<a href="#" class="social-hashtag"><b>#visitsedona</b></a>
+	<ul class="social-block">
+		<li><a href="#" class="social-button tw-button"><span class="visually-hidden">Страница Седоны в Твиттере</span></a></li>
+		<li><a href="#" class="social-button fb-button"><span class="visually-hidden">Страница Седоны в Фейсбуке</span></a></li>
+		<li><a href="#" class="social-button utb-button"><span class="visually-hidden">Страница Седоны в Ютубе</span></a></li>
+	</ul>
+	<p class="footer-copyright">
+		<span>website by</span>
+		<a href="#" class="copyright-link"><span class="visually-hidden">Страница htmlacademy</span></a>
+	</p>
+</footer>
 </body>
 </html>
