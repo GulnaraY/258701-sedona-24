@@ -6,8 +6,10 @@ body{
     text-transform: uppercase;
     min-width: 1200px;
     margin: 0;
+    background-color: #f2f2f2;
 
     color: #000;
+
 }
 
 a{
@@ -44,6 +46,15 @@ input[type="radio"].visually-hidden{
     width: 1056px;
     margin: 0 auto;
     padding: 0 73px;
+}
+
+.wrapper{
+    margin: 0 auto;
+    width: 1200px;
+    background-color: #fff;
+    color: #000;
+     box-shadow: 15px 0 15px -15px rgba(0, 0, 0, 0.2),
+                -15px 0 15px -15px rgba(0, 0, 0, 0.2);
 }
 
 .button{
@@ -225,7 +236,7 @@ input[type="radio"].visually-hidden{
 
 .promo-reasons-item:first-child,
 .promo-reasons-item:nth-child(2){
-    width: 1200px;
+    /*width: 1200px;*/
     display: flex;
     background-color: #81b3d2;
     color: #fff;
@@ -351,6 +362,8 @@ input[type="radio"].visually-hidden{
     background-color: #fff;
     display: flex;
     flex-wrap: wrap;
+    z-index: 3;
+
 }
 
 .hotels-search-popup .button{
@@ -359,9 +372,13 @@ input[type="radio"].visually-hidden{
     padding-bottom: 33px;
     font-size: 21px;
     line-height: 26px;
+
 }
 
 .booking-form{
+    position: relative;
+      box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+    display: none;
     padding: 0;
     margin: 0;
     padding: 55px;
@@ -496,6 +513,22 @@ input[type="radio"].visually-hidden{
 .quantity-plus:active::before,
 .quantity-plus:active::after{
     background-color: #81b3d2;
+}
+
+
+.search-hotels iframe{
+    position: relative;
+    z-index: 2;
+
+    border: none;
+}
+
+.map-image{
+    position: absolute;
+    top: 238px;
+    left: 0;
+    width: 1200px;
+    height: 473px;
 }
 
 .booking{
@@ -882,8 +915,8 @@ a.current-sorting-type:active{
 .main-footer{
     display: flex;
     justify-content: space-between;
-    padding-left: 132px;
-    padding-right: 101px;
+  /*  padding-left: 132px;
+    padding-right: 101px;*/
     padding-top: 36px;
     padding-bottom: 36px;
     align-items: center;
@@ -892,7 +925,8 @@ a.current-sorting-type:active{
 .social-hashtag{
     margin: 0;
     padding: 0;
- 
+    width: 241px;
+    text-align: center;
 }
 
 .social-hashtag b{
@@ -978,7 +1012,8 @@ a.current-sorting-type:active{
 }
 
 .footer-copyright{
-    width: 195px;
+    width: 241px;
+    text-align: center;
 }
 
 .copyright-link{
