@@ -525,7 +525,9 @@ input[type="radio"].visually-hidden{
 }
 
 .filter-right-column{
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .filter-form fieldset{
@@ -604,6 +606,115 @@ input[type="radio"].visually-hidden{
     background-image: url("../img/checkbox-on-disable.svg");
 }
 
+.price-filter{
+    width: 314px;
+}
+
+.price-filter legend{
+    margin-bottom: 13px;
+}
+
+.price-controls{
+    position: relative;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    padding-top: 11px;
+    padding-bottom: 11px;  
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 22px;
+}
+
+.price-controls::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    margin-top: -11px;
+    left: 50%;
+    width: 2px;
+    height: 22px;
+    background-color: #fff;
+}
+
+.price-controls input{
+    background-color: transparent;
+    border: none;
+   
+    font: inherit;
+    color: #fff;
+    width: 30px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.price-controls label{
+    padding: 0;
+    color: #fff;
+    display: flex; 
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+    width: 50%;
+}
+
+.filter-button{
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 2px;
+    padding: 11px 34px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.filter-button:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.range-controls{
+    margin-bottom: 34px;
+      position: relative;
+}
+
+.range-controls .scale{
+  
+    width: 100%;
+    height: 2px;
+    background-color: rgba(0, 1, 1, 0.2);
+}
+
+.range-controls .bar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 2px;
+    background-color: #fff;
+}
+
+.toggle{
+    position: absolute;
+    top: -9px;
+    width: 4px;
+    height: 4px;
+    border: 8px solid #fff;
+    border-radius: 50%;
+    background-color:  rgba(0, 1, 1, 0.2);
+    cursor: pointer;
+    box-shadow: 0 2px 1px 0 #cfcfcf;
+}
+
+.toggle:hover{
+    border: 9px solid #fff;
+}
+
+.toggle-min{
+    left: 0;
+}
+
+.toggle-max{
+    left: 70%;
+}
 .results-summary{
     display: flex;
     justify-content: space-between;
