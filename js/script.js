@@ -1,10 +1,20 @@
-	var searchPopup = document.querySelector(".hotels-search-popup");
-	var popupButton = searchPopup.querySelector(".popup-button");
-	var searchForm = searchPopup.querySelector(".booking-form");
+	var popupButton = document.querySelector(".popup-button");
+	var searchForm = document.querySelector(".booking-form");
+	var arrival = searchForm.querySelector(".arrival-input");
+	var departure = searchForm.querySelector(".departure-input");
 
 	popupButton.addEventListener("click", function(evt){
 		evt.preventDefault();
 		searchForm.classList.toggle("show-search-form");
+	});
+
+	searchForm.addEventListener("submit", function(evt){
+		if(!arrival.value || !departure.value){
+			evt.preventDefault();
+			searchForm.classList.remove("modal-error");
+			searchForm.offsetWidth = searchForm.offsetWidth;
+			searchForm.classList.add("modal-error");
+		}
 	});
 
 		window.addEventListener("keydown", function(evt){
@@ -15,3 +25,4 @@
 			}
 		}
 	});
+
