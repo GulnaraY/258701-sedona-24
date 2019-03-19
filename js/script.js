@@ -2,6 +2,7 @@
 	var searchForm = document.querySelector(".booking-form");
 	var arrival = searchForm.querySelector(".arrival-input");
 	var departure = searchForm.querySelector(".departure-input");
+	var adults = searchForm.querySelector(".adults-input")
 
 	popupButton.addEventListener("click", function(evt){
 		evt.preventDefault();
@@ -9,7 +10,7 @@
 	});
 
 	searchForm.addEventListener("submit", function(evt){
-		if(!arrival.value || !departure.value){
+		if(!arrival.value || !departure.value || !adults.value){
 			evt.preventDefault();
 			searchForm.classList.remove("modal-error");
 			searchForm.offsetWidth = searchForm.offsetWidth;
