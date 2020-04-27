@@ -2,6 +2,6 @@
 
 ## Неадаптивная верстка
 
-Опубликованная версия:
-* Главная страница https://GulnaraY.github.io/sedona-non-adaptive
-* Страница каталога https://GulnaraY.github.io/sedona-non-adaptive/hotels.html
+## Опубликованная версия:
+* <a href="https://GulnaraYakupova.github.io/sedona-non-adaptive">Главная страница</a> 
+* <a href="https://GulnaraYakupova.github.io/sedona-non-adaptive/hotels.html">Страница каталога</a> 
